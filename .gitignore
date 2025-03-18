@@ -1,8 +1,8 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/class-react/node_modules
-/function-react/node_modules
+REACT/class-react/node_modules
+REACT/function-react/node_modules
 /.pnp
 .pnp.js
 
