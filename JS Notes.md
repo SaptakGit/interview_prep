@@ -17,7 +17,7 @@ Namaste Javascript
     code execution phase:
         variable = set the given value of variable in code
         in case of function call it creates another execution context with only the indise part of the function. 
-	and repezt the process of phase 1 and phase 2.
+        and repezt the process of phase 1 and phase 2.
         
         
     all the execution cantext are kept in a call stack.
@@ -28,7 +28,8 @@ Namaste Javascript
 # CHAPTOR - 5:
 
     if a JS file is empty(sortest JS function) it still js creates a window(in case of browser).
-    window = it a global object along with a global execution context. here we have all the functions that are provided by JS Engine to us for use	
+    window = it a global object along with a global execution context. here we have all the functions that are 
+    provided by JS Engine to us for use	
 
     here the "this" is point to this window
     this === window = True
@@ -51,7 +52,8 @@ Namaste Javascript
 
     let and const are hoisted but they are in the Temporal Dead Zone for the Time being
 
-    let and const are also hoisted(allocated memory) but in separate memory space. It can not be accress untill we put some value in it.it will give referance error.
+    let and const are also hoisted(allocated memory) but in separate memory space. It can not be accress untill we put 
+    some value in it.it will give referance error.
 
     temporala dead zone: the time between when the let/const variable is hoisted  to the time it is initialised with some value.
 
@@ -75,7 +77,8 @@ Namaste Javascript
 
     let and const are hoisted inside the block scope if they are defind inside {}. where as var is hoisted in global scope.
 
-    once the work of {} (block) is done the block scope is deleted.so let and const can not be access from outside {}. but var can be access since it is in global scope.
+    once the work of {} (block) is done the block scope is deleted.so let and const can not be access from outside {}. 
+    but var can be access since it is in global scope.
 
     shadowing
     illigal shadowing
@@ -145,8 +148,8 @@ Namaste Javascript
 
     Diff Statement and Expression:
         The main differance is Hoisting
-        if a() and b() are called before declaration. a() will run as it is treated as a function at time of memory creation but b is 
-        breated as a variable and assinged as undefined and thus will throws a type error.
+        if a() and b() are called before declaration. a() will run as it is treated as a function at time of memory creation 
+        but b is breated as a variable and assinged as undefined and thus will throws a type error.
 
     Function Declaration:
         Function Statement are also known as Function Declaration.
@@ -156,7 +159,8 @@ Namaste Javascript
         function(){
             
         }
-        It is used when they are used as values. Like Function Expression. It can not be used as Function Statement. It will throw syntax error.
+        It is used when they are used as values. Like Function Expression. It can not be used as Function Statement. 
+        It will throw syntax error.
         
     Named Function Expression:
         IT is same as Function Expression but with a Named Function not an Anonymous Function.
@@ -185,7 +189,8 @@ Namaste Javascript
 # CHAPTOR - 14:
 	
     What is Callback Function in JavaScript?
-        The function which is passed as an argument in a Function and called later is known as Callback Function.It gives us access to Asynchronus Operation.
+        The function which is passed as an argument in a Function and called later is known as Callback Function.
+        It gives us access to Asynchronus Operation.
         
     Blocking the main thread:
         If a piece of code thake too much time to execute, it create a blockage to the main thread/main call stack, 
@@ -195,7 +200,8 @@ Namaste Javascript
         Event Listener are Callback Functions that are invoke by an Event.
         
     Garbage Collection & removeEventListeners:
-        eventListeners are heavy, it takes memory. They form a closure. So the call stack may be empty but they hold onto their Lexical values.
+        eventListeners are heavy, it takes memory. They form a closure. So the call stack may be empty but they hold onto 
+        their Lexical values.
         
     Web APIs:
         SetTimeout()
