@@ -1,7 +1,7 @@
 
 1) Hooks:
-    useState: Manages state in functional components.
-    useEffect: Handles side effects in functional components. ( significance of dependency array eg. what happens when its empty, when it has some value, when its not there)
+    a) useState: Manages state in functional components.
+    b) useEffect: Handles side effects in functional components. ( significance of dependency array eg. what happens when its empty, when it has some value, when its not there)
     useContext: Accesses the context in functional components.
     useReducer: Manages complex state logic with a reducer function.
     useMemo: Memoizes values to optimize performance.
