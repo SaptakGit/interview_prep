@@ -19,7 +19,8 @@
     }
 
 # useEffect
-    It is called every time after the component is rendered. But because of the dependancy arry the behaviour of the render will changed.
+    It is called every time after the component is rendered. But because of the dependancy arry the behaviour of the render
+    will changed.
     It comes with two arguments
         1. Callback function
         2. Dependancy array (not mandetory)
@@ -60,10 +61,13 @@
 
 # useReducer
     The useReducer hook in React is used for managing more complex state logic than what is typically handled by useState. 
-    It is particularly useful in scenarios where the next state depends on the previous state or when dealing with multiple sub-values within the state.
+    It is particularly useful in scenarios where the next state depends on the previous state or when dealing with multiple 
+    sub-values within the state.
 
-    useReducer accepts a reducer function and an initial state as arguments and returns the current state and a dispatch function. 
-    The reducer function contains the logic for how the state should be updated based on different actions. The dispatch function is used to trigger these state updates.
+    useReducer accepts a reducer function and an initial state as arguments and returns the current state and a dispatch 
+    function. 
+    The reducer function contains the logic for how the state should be updated based on different actions. The dispatch 
+    function is used to trigger these state updates.
 
     # Code
 
@@ -94,9 +98,11 @@
 
 # useMemo
     useMemo is a React Hook that serves to optimize performance by memoizing the result of a computation. 
-    It's employed when a component re-renders frequently, and a specific calculation is expensive and doesn't change between renders unless its dependencies change. 
+    It's employed when a component re-renders frequently, and a specific calculation is expensive and doesn't change between 
+    renders unless its dependencies change. 
 
-    The primary purpose of useMemo is to prevent unnecessary recalculations. When a component re-renders, all functions within it are typically re-executed. 
+    The primary purpose of useMemo is to prevent unnecessary recalculations. When a component re-renders, all functions within 
+    it are typically re-executed. 
     If a function performs a complex or resource-intensive calculation, this can lead to performance bottlenecks, 
     especially if the result of the calculation remains the same across multiple renders.
 
@@ -117,7 +123,8 @@
     It memoizes a callback function, returning the same function instance across renders unless its dependencies change.
 
     In this example, handleClick is memoized using useCallback. It will only be recreated if count or onButtonClick changes. 
-    This ensures that if MyComponent is a child of a memoized component, it won't cause the parent to re-render unnecessarily unless count or onButtonClick actually change.
+    This ensures that if MyComponent is a child of a memoized component, it won't cause the parent to re-render unnecessarily 
+    unless count or onButtonClick actually change.
 
     # Code 
 
@@ -138,8 +145,10 @@
     };
 
 # useRef
-    useRef is a React Hook that allows to create a mutable object, known as a "ref", which can hold a reference to a DOM element or any other value. 
-    This ref persists across renders, and unlike state variables, changing the value of a ref does not trigger a re-render of the component. 
+    useRef is a React Hook that allows to create a mutable object, known as a "ref", which can hold a reference to a DOM 
+    element or any other value. 
+    This ref persists across renders, and unlike state variables, changing the value of a ref does not trigger a re-render 
+    of the component. 
 
     # Code
 
