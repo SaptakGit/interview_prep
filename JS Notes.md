@@ -16,7 +16,8 @@ Namaste Javascript
     phase 2:
     code execution phase:
         variable = set the given value of variable in code
-        in case of function call it creates another execution context with only the indise part of the function. and repezt the process of phase 1 and phase 2.
+        in case of function call it creates another execution context with only the indise part of the function. 
+	and repezt the process of phase 1 and phase 2.
         
         
     all the execution cantext are kept in a call stack.
