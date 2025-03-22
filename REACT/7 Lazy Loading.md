@@ -18,8 +18,8 @@
 
     This bundle will not be loaded initially. It will be loaded only when the user visits the cart page. 
 
-    That means, with this approach the app will have 2 bundles. One would be a normal bundle which contains all the code of the app 
-    except for the cart component. This bundle will be loaded when the user visits our app.  
+    That means, with this approach the app will have 2 bundles. One would be a normal bundle which contains all the code of the 
+    app except for the cart component. This bundle will be loaded when the user visits our app.  
 
     The other bundle will contain the code of the cart component which will be loaded only when the user visits the shopping cart.  
     That is why this process is also known as 'on demand  loading'. 
@@ -59,10 +59,12 @@
 
 # Suspense 
     ● Suspense is a built-in React component which lets you temporarily render a fallback UI while its children are still loading. 
-    ● If a component tries to retrieve the API response, while it does that, we can show a fallback UI to the user until we get the API response. 
+    ● If a component tries to retrieve the API response, while it does that, we can show a fallback UI to the user until we get 
+        the API response. 
     ● This fallback UI could be a shimmer UI as well. 
     ● We can just wrap the lazy loaded component inside the <Suspense> component. 
-    ● This <Suspense> component has a property i.e. fallback which takes the component which must be rendered until we get the API response in this case.
+    ● This <Suspense> component has a property i.e. fallback which takes the component which must be rendered until we get the 
+        API response in this case.
 
     // Without Lazy Loading
         import About from './About';
