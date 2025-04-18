@@ -1,4 +1,7 @@
 # 1.What is Express.js?
+  Express.js, or simply Express, is a back end web application framework for building RESTful APIs with Node.js. 
+  According to the MDN Documents "Express is a popular unopinionated web framework, written in JavaScript and 
+  hosted within the Node.js runtime environment."
 # 2.How do you create a simple server using Express.js?
 # 3.What is middleware in Express.js?
 # 4.How does Express.js differ from other web frameworks?
