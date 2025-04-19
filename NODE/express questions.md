@@ -19,14 +19,18 @@
     
 
 # 3.What is middleware in Express.js?
-    Middleware in Express refers to functions that process requests before reaching the route handlers. These functions can modify the request and response objects, end the request-response cycle, or call the next middleware function. Middleware functions are executed in the order they are defined. They can perform tasks like authentication, logging, or error handling.
+    Middleware in Express refers to functions that process requests before reaching the route handlers. These functions 
+    can modify the request and response objects, end the request-response cycle, or call the next middleware function. 
+    Middleware functions are executed in the order they are defined. They can perform tasks like authentication, logging, or error handling.
     Syntax:
         app.use((req, res, next) => {
             console.log('Middleware executed');
             next();
         });
-        (req, res, next) => {}: This is the middleware function where you can perform actions on the request and response objects before the final handler is executed.
-        next(): This function is called to pass control to the next middleware in the stack if the current one doesn’t end the request-response cycle.
+        (req, res, next) => {}: This is the middleware function where you can perform actions on the request and response objects 
+                                before the final handler is executed.
+        next(): This function is called to pass control to the next middleware in the stack if the current one doesn’t end the 
+                request-response cycle.
 
     Types of Middleware:
         1. Application-level Middleware
