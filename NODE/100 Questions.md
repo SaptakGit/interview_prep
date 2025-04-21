@@ -12,50 +12,71 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		applications, Network applications, General-purpose applications, and Distributed systems.
 
 2. Why use Node.js?
+
 		Node.js makes building scalable network programs easy. Some of its advantages include:
 		It is generally fast
 		It rarely blocks
 		It offers a unified programming language and data type
 		Everything is asynchronous 
 		It yields great concurrency
+
 3. How does Node.js work?
+
 		A web server using Node.js typically has a workflow that is quite similar to the diagram illustrated below. 
 		Let’s explore this flow of operations in detail.
 		Node.js Architecture Workflow
-		Clients send requests to the webserver to interact with the web application. Requests can be non-blocking or blocking:
+		Clients send requests to the webserver to interact with the web application. Requests can be non-blocking or 
+		blocking:
 		Querying for data
 		Deleting data 
 		Updating the data
 		Node.js retrieves the incoming requests and adds those to the Event Queue
-		The requests are then passed one-by-one through the Event Loop. It checks if the requests are simple enough not to require any external resources
-		The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and returns the responses to the corresponding clients
-		A single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for completing a particular blocking request by accessing external resources, such as computation, database, file system, etc.
-
-		Once the task is carried out completely, the response is sent to the Event Loop that sends that response back to the client.
+		The requests are then passed one-by-one through the Event Loop. It checks if the requests are simple enough 
+		not to require any external resources
+		The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and returns the 
+		responses to the corresponding clients
+		A single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for 
+		completing a particular blocking request by accessing external resources, such as computation, database, 
+		file system, etc.
+		Once the task is carried out completely, the response is sent to the Event Loop that sends that response back 
+		to the client.
 
 4. Why is Node.js Single-threaded?
-		Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical web loads, more performance and scalability can be achieved instead of the typical thread-based implementation.
+
+		Node.js is single-threaded for async processing. By doing async processing on a single-thread under typical 
+		web loads, more performance and scalability can be achieved instead of the typical thread-based implementation.
 
 5. If Node.js is single-threaded, then how does it handle concurrency?
-		The Multi-Threaded Request/Response Stateless Model is not followed by the Node JS Platform, and it adheres to the Single-Threaded Event Loop Model. The Node JS Processing paradigm is heavily influenced by the JavaScript Event-based model and the JavaScript callback system. As a result, Node.js can easily manage more concurrent client requests. The event loop is the processing model's beating heart in Node.js.
+
+		The Multi-Threaded Request/Response Stateless Model is not followed by the Node JS Platform, and it adheres 
+		to the Single-Threaded Event Loop Model. The Node JS Processing paradigm is heavily influenced by the JavaScript 
+		Event-based model and the JavaScript callback system. As a result, Node.js can easily manage more concurrent 
+		client requests. The event loop is the processing model's beating heart in Node.js.
 
 6. Explain callback in Node.js.
-		A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking.  Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are written to support callbacks.
+
+		A callback function is called after a given task. It allows other code to be run in the meantime and prevents 
+		any blocking.  Being an asynchronous platform, Node.js heavily relies on callback. All APIs of Node are 
+		written to support callbacks.
 
 7. What are the advantages of using promises instead of callbacks?
+
 		The control flow of asynchronous logic is more specified and structured.
 		The coupling is low.
 		We've built-in error handling.
 		Improved readability.
 
 8. How would you define the term I/O? 
-		The term I/O is used to describe any program, operation, or device that transfers data to or from a medium and to or from another medium
-		Every transfer is an output from one medium and an input into another. The medium can be a physical device, network, or files within a system
+
+		The term I/O is used to describe any program, operation, or device that transfers data to or from a medium 
+		and to or from another medium
+		Every transfer is an output from one medium and an input into another. The medium can be a physical device, 
+		network, or files within a system
 		io
 
 9. How is Node.js most frequently used?
-		Node.js is widely used in the following applications:
 
+		Node.js is widely used in the following applications:
 		Real-time chats
 		Internet of Things
 		Complex SPAs (Single-Page Applications)
@@ -64,6 +85,7 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Microservices architecture
 
 10. Explain the difference between frontend and backend development?
+
 		Front-end
 
 		Back-end
@@ -86,14 +108,20 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 
 
 11. What is NPM?
+
 		NPM stands for Node Package Manager, responsible for managing all the packages and modules for Node.js.
 
 		Node Package Manager provides two main functionalities:
 
 		Provides online repositories for node.js packages/modules, which are searchable on search.nodejs.org
-		Provides command-line utility to install Node.js packages and also manages Node.js versions and dependencies  
+		Provides command-line utility to install Node.js packages and also manages Node.js versions and 
+		dependencies  
+
 12. What are the modules in Node.js?
-		Modules are like JavaScript libraries that can be used in a Node.js application to include a set of functions. To include a module in a Node.js application, use the require() function with the parentheses containing the module's name.
+
+		Modules are like JavaScript libraries that can be used in a Node.js application to include a set of 
+		functions. To include a module in a Node.js application, use the require() function with the parentheses 
+		containing the module's name.
 
 
 
@@ -132,8 +160,13 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Includes methods to compress or decompress files
 
 13. What is the purpose of the module .Exports?
-		In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by moving all relevant functions into a single file. You may export a module with the module and export the function, which lets it be imported into another file with a needed keyword.
+
+		In Node.js, a module encapsulates all related codes into a single unit of code that can be parsed by 
+		moving all relevant functions into a single file. You may export a module with the module and export 
+		the function, which lets it be imported into another file with a needed keyword.
+
 14. Why is Node.js preferred over other backend technologies like Java and PHP?
+
 		Some of the reasons why Node.js is preferred include:
 
 		Node.js is very fast
@@ -141,7 +174,9 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Perfect for data-intensive, real-time web applications, as Node.js never waits for an API to return data
 		Better synchronization of code between server and client due to same code base
 		Easy for web developers to start using Node.js in their projects as it is a JavaScript library
+
 15. What is the difference between Angular and Node.js?
+
 		Angular
 
 		Node.js
@@ -163,16 +198,23 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Generates database queries
 
 16. Which database is more popularly used with Node.js?
-		MongoDB is the most common database used with Node.js. It is a NoSQL, cross-platform, document-oriented database that provides high performance, high availability, and easy scalability.
+
+		MongoDB is the most common database used with Node.js. It is a NoSQL, cross-platform, document-oriented 
+		database that provides high performance, high availability, and easy scalability.
 
 		Get the Coding Skills You Need to Succeed
 		Full Stack Developer - MERN StackExplore ProgramGet the Coding Skills You Need to Succeed
-17. What are some of the most commonly used libraries in Node.js?
-		There are two commonly used libraries in Node.js:
 
-		ExpressJS - Express is a flexible Node.js web application framework that provides a wide set of features to develop web and mobile applications.
-		Mongoose - Mongoose is also a Node.js web application framework that makes connecting an application to a database easy.
+17. What are some of the most commonly used libraries in Node.js?
+
+		There are two commonly used libraries in Node.js:
+		ExpressJS - Express is a flexible Node.js web application framework that provides a wide set of features 
+		to develop web and mobile applications.
+		Mongoose - Mongoose is also a Node.js web application framework that makes connecting an application 
+		to a database easy.
+
 18. What are the pros and cons of Node.js?
+
 		Node.js Pros
 
 		Node.js Cons
