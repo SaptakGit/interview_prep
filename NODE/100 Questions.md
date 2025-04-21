@@ -4,23 +4,23 @@ This section will provide you with the Basic Node.js interview questions which w
 Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-questions
 
 1. What is Node.js and Where can you use it?
-		Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications outside the client’s browser. It is used to create server-side web applications.
-
-		Node.js is perfect for data-intensive applications as it uses an asynchronous, event-driven model. You can use  I/O intensive web applications like video streaming sites. You can also use it for developing: Real-time web applications, Network applications, General-purpose applications, and Distributed systems.
+		Node.js is an open-source, cross-platform JavaScript runtime environment and library to run web applications 
+		outside the client’s browser. It is used to create server-side web applications.
+		Node.js is perfect for data-intensive applications as it uses an asynchronous, event-driven model. You can use 
+		I/O intensive web applications like video streaming sites. You can also use it for developing: Real-time web 
+		applications, Network applications, General-purpose applications, and Distributed systems.
 
 2. Why use Node.js?
 		Node.js makes building scalable network programs easy. Some of its advantages include:
-
 		It is generally fast
 		It rarely blocks
 		It offers a unified programming language and data type
 		Everything is asynchronous 
 		It yields great concurrency
 3. How does Node.js work?
-		A web server using Node.js typically has a workflow that is quite similar to the diagram illustrated below. Let’s explore this flow of operations in detail.
-
+		A web server using Node.js typically has a workflow that is quite similar to the diagram illustrated below. 
+		Let’s explore this flow of operations in detail.
 		Node.js Architecture Workflow
-
 		Clients send requests to the webserver to interact with the web application. Requests can be non-blocking or blocking:
 		Querying for data
 		Deleting data 
