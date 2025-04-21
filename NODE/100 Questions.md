@@ -269,7 +269,7 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		A Node.js-based server never waits for an API to return data. Instead, it moves to the next API after calling it, and a notification mechanism from a Node.js event responds to the server for the previous API call
 33. How do we implement async in Node.js?
 		As shown below, the async code asks the JavaScript engine running the code to wait for the request.get() function to complete before moving on to the next line for execution.
-
+ 
 		async
 
 34. What is a callback function in Node.js?
