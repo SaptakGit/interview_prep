@@ -325,6 +325,12 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 
 30. How do you install, update, and delete a dependency?
 
+		npm install express
+
+		npm update
+
+		npm uninstall express
+
 
 31. How do you create a simple server in Node.js that returns Hello World?
 
@@ -334,8 +340,7 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Use createServer function with a callback function using request and response as parameters.
 		Type “hello world." 
 		Set the server to listen to port 8080 and assign an IP address
-		Get the Coding Skills You Need to Succeed
-		Full Stack Developer - MERN StackExplore ProgramGet the Coding Skills You Need to Succeed
+		
 
 32. Explain asynchronous and non-blocking APIs in Node.js.
 
@@ -355,10 +360,8 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		A callback is a function called after a given task. This prevents any blocking and enables other code to run in 
 		the meantime.
 
-		In the last section, we will now cover some of the advanced-level Node.js interview questions.
-
-		Unleash Your Career as a Full Stack Developer!
-		Full Stack Developer - MERN StackEXPLORE COURSEUnleash Your Career as a Full Stack Developer!
+		
+		
 		Node.js Interview Questions and Answers For Experienced Professionals
 		This section will provide you with the Advanced Node.js interview questions, which will primarily help experienced 
 		professionals.

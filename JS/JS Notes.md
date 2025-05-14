@@ -23,7 +23,36 @@ Namaste Javascript
     all the execution cantext are kept in a call stack.
     the main (global) is at bottom. onec the execution is done it removes from the stack.
 
-    JavaScript Hoist
+    JavaScript Hoist : Hoisting in JavaScript is a behavior where variable and function declarations are moved to 
+        the top of their scope before code execution. This allows you to use variables and functions before they 
+        are declared in the code. It's important to note that only declarations are hoisted, not initializations.  
+
+        1.  console.log(myVar); // Output: undefined
+            var myVar = 10;
+            console.log(myVar); // Output: 10
+
+        2.  var myVar;
+            console.log(myVar); // Output: undefined
+            myVar = 10;
+            console.log(myVar); // Output: 10
+
+        3.  Function declarations are also hoisted, meaning you can call a function before it is defined in the 
+            code:
+
+            myFunction(); // Output: "Hello!"
+
+            function myFunction() {
+                console.log("Hello!");
+            }
+
+        4.  However, function expressions are not hoisted in the same way. If you try to call a function 
+            expression before it is defined, you will get an error:
+
+            myFunction(); // Output: Error: Cannot access 'myFunction' before initialization
+
+            const myFunction = function() {
+                console.log("Hello!");
+            };
 
 # CHAPTOR - 5:
 
@@ -55,7 +84,7 @@ Namaste Javascript
     let and const are also hoisted(allocated memory) but in separate memory space. It can not be accress untill we put 
     some value in it.it will give referance error.
 
-    temporala dead zone: the time between when the let/const variable is hoisted  to the time it is initialised with some value.
+    temporala dead zone: the time between when the let/const variable is hoisted to the time it is initialised with some value.
 
     redeclaration/ duplication of let is not possible. it will give a syntax error.
 
