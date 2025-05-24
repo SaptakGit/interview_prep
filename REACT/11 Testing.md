@@ -8,7 +8,7 @@
     the application rather than the implementation details. It uses queries like getByText, 
     getByRole, or findByTestId to select elements, simulating real user behavior.
 
-## code
+## Code
     import { render, screen, fireEvent } from '@testing-library/react';
     import MyButton from './MyButton';
 
