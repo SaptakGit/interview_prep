@@ -21,7 +21,7 @@ Namaste Javascript
         
         
     all the execution cantext are kept in a call stack.
-    the main (global) is at bottom. onec the execution is done it removes from the stack.
+    the main (global) is at bottom. once the execution is done it removes from the stack.
 
     JavaScript Hoist : Hoisting in JavaScript is a behavior where variable and function declarations are moved to 
         the top of their scope before code execution. This allows you to use variables and functions before they 
@@ -406,7 +406,7 @@ Namaste Javascript
     promise object is immmutable
 
     What is Promise ?
-    A promise is an object representation the eventual completion or failure of an asynchronous operation.
+    A promise is an object representation of the eventual completion or failure of an asynchronous operation.
 
     Promise Chaning:
     It is the solution of callback hell using promise.
@@ -680,7 +680,7 @@ Namaste Javascript
 
             bind():It looks exactly the same as call() method. But the only differance is instead of directly calling this method over here 
             the bind method binds this method printFullName with an object and retunrs us the copy of that method. It will create a copy of 
-            printFullName and it will bind tha to name2 object and will return a function. The catch over here is that it dosen't call the method 
+            printFullName and it will bind the to name2 object and will return a function. The catch over here is that it dosen't call the method 
             directly like call method rather than it will return us a method which can be call later.So this used to just bind and keep a copy of 
             that method to use it later. The only difference between call() and bind() it that it gives us the copy to use it later rather than directly invoking it.
 

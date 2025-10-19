@@ -39,7 +39,7 @@ Get-ExecutionPolicy -list
     -------------------------------------------------------------------
     1) Use module.exports, require    | 1) Use import, export
     2) By default Enebaled in NodeJs  | 2) By default in React, Angular              |
-    3) "type": "CommonJs"             | 3) "type": "module" 
+    3) "type": "CommonJs"             | 3) "type": "module"
     4) Older Way                      | 4) Newer Way
     5) Synchronous Call ()            | 5) Async Way
     6) Code runs in non-strict mode   | 6) The code runs in strict mode
@@ -245,7 +245,7 @@ Get-ExecutionPolicy -list
                             ^              |
                             |              |
                             |              V
-                            Close           Poll
+                          Close           Poll
                             ^              |
                             |              |
                             |              |

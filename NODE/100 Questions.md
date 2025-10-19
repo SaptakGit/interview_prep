@@ -314,7 +314,8 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 
 29. What are streams in Node.js?
 
-		Streams are objects that enable you to read data or write data continuously.
+		Streams allow you to process data in chunks, rather than loading the entire dataset into memory at once.
+		This is useful for handling large files, network requests, and other I/O operations. 
 
 		There are four types of streams:
 
@@ -323,7 +324,30 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Duplex − Can be used for both read and write operations
 		Transform − A type of duplex stream where the output is computed based on the input
 
-30. How do you install, update, and delete a dependency?
+30. What is the buffer in Node.js?
+
+		Buffer class stores raw data similar to an array of integers but corresponds to a raw memory allocation outside 
+		the V8 heap. Buffer class is used because pure JavaScript is not compatible with binary data
+
+		A buffer is a temporary storage location in memory for a chunk of data that's being transferred. 
+		Buffers are used to store binary data, such as the data read from a file or received over a network.
+		Buffers have a fixed size, which cannot be changed after creation.
+		When a stream reads data, it stores each chunk of data in a buffer. 
+		This allows data to be processed and manipulated before being passed along.
+		Buffers are often used in conjunction with streams to handle data efficiently.
+
+** How They Work Together
+		Streams work with data in chunks, and these chunks are often Buffers when dealing with binary data. 
+		When a stream reads data, it stores each chunk of data in a buffer. 
+		The buffer size is determined by the stream's highWaterMark property. 
+		If the buffer is full, the stream may pause reading until the buffer is emptied.
+
+31. What is piping in Node.js?
+
+		Piping is a mechanism used to connect the output of one stream to another stream. It is normally used to retrieve 
+		data from one stream and pass output to another stream
+
+32. How do you install, update, and delete a dependency?
 
 		npm install express
 
@@ -332,7 +356,7 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		npm uninstall express
 
 
-31. How do you create a simple server in Node.js that returns Hello World?
+33. How do you create a simple server in Node.js that returns Hello World?
 
 		simple-server
 
@@ -342,20 +366,20 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		Set the server to listen to port 8080 and assign an IP address
 		
 
-32. Explain asynchronous and non-blocking APIs in Node.js.
+34. Explain asynchronous and non-blocking APIs in Node.js.
 
 		All Node.js library APIs are asynchronous, which means they are also non-blocking
 		A Node.js-based server never waits for an API to return data. Instead, it moves to the next API after calling it, 
 		and a notification mechanism from a Node.js event responds to the server for the previous API call
 
-33. How do we implement async in Node.js?
+35. How do we implement async in Node.js?
 
 		As shown below, the async code asks the JavaScript engine running the code to wait for the request.get() 
 		function to complete before moving on to the next line for execution.
  
 		async
 
-34. What is a callback function in Node.js?
+36. What is a callback function in Node.js?
 
 		A callback is a function called after a given task. This prevents any blocking and enables other code to run in 
 		the meantime.
@@ -366,22 +390,22 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 		This section will provide you with the Advanced Node.js interview questions, which will primarily help experienced 
 		professionals.
 
-35. What is REPL in Node.js?
+37. What is REPL in Node.js?
 
 		REPL stands for Read Eval Print Loop, representing a computer environment. It’s similar to a Windows console or 
 		Unix/Linux shell in which a command is entered. Then, the system responds with an output
 
 		repl2
 
-36. What is the control flow function?
+38. What is the control flow function?
 
 		The control flow function is a code that runs between several asynchronous function calls.
 
-37. How does control flow manage the function calls?
+39. How does control flow manage the function calls?
 
 		function-calls
 
-38. What is the difference between fork() and spawn() methods in Node.js?
+40. What is the difference between fork() and spawn() methods in Node.js?
 
 		fork()
 
@@ -396,15 +420,6 @@ Source : https://www.simplilearn.com/tutorials/nodejs-tutorial/nodejs-interview-
 
 		This method doesn’t generate a new V8 instance, and only a single copy of the node module is active on the processor.
 
-39. What is the buffer class in Node.js?
-
-		Buffer class stores raw data similar to an array of integers but corresponds to a raw memory allocation outside 
-		the V8 heap. Buffer class is used because pure JavaScript is not compatible with binary data
-
-40. What is piping in Node.js?
-
-		Piping is a mechanism used to connect the output of one stream to another stream. It is normally used to retrieve 
-		data from one stream and pass output to another stream
 
 41. What are some of the flags used in the read/write operations in files?
 		flags
