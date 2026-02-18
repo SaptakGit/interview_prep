@@ -277,6 +277,7 @@
 59. Explain React.memo with example
 60. Explain the reconciliation process in React and how it works.
 61. What are Pure components?
+        Pure components are like pure functions: they consistently produce the same output for the same input and don't have side effects. In software development, especially in frameworks like React, this means they will always render the same output given the same props and state, and they don't modify any data outside their own scope. This characteristic makes them predictable and allows for performance optimizations, as the component can skip re-rendering if the input (props and state) hasn't changed. 
 62. Explain higher order component with example.
 63. What is redux, explain core principles.
 64. What are actions in Redux, explain with example?
@@ -292,7 +293,10 @@
 74. How do you optimize performance in React applications?
 75. What is code splitting in React?
 76. What are render props in React? Give an example
+        Render props in React are a pattern where a component's prop is a function that returns a React element. This function is called by the component to dynamically render its UI based on its internal state or props, enabling the sharing of logic between components without tight coupling.
 77. What are portals in React?
+        In React, Portals provide a way to render children into a DOM node that exists outside the DOM hierarchy of the parent component. While the component is logically part of the React component tree and maintains its React context and event bubbling behavior, its rendered output is physically placed in a different part of the DOM. 
+        Modals and Dialog Boxes, Tooltips and Popovers, Hovercards, Loaders and Notifications
 78. How do you implement lazy loading in React?
 79. How do you define props for a functional component in TypeScript?
 80. How do you use the useState hook with TypeScript?

@@ -1,4 +1,4 @@
-Namaste Javascript
+ Namaste Javascript
 # CHAPTOR - 4:
     "Execution Context"
         a) Memory Component(variable Environment) => all the variable and functions are stored as key:value pair
